@@ -26,12 +26,12 @@
             <th>Completed</th>
         </tr>
         <?php foreach ($tasques as $tasca):?>
-        <tr>
-            <td><?=$tasca->id;?></td>
-            <td><?=$tasca->title;?></td>
-            <td><?=$tasca->descritpion;?></td>
-            <td><?=$tasca->completed;?></td>
-        </tr>
+            <tr>
+                <td><?=$tasca->id;?></td>
+                <td><?=$tasca->title;?></td>
+                <td><?=$tasca->description;?></td>
+                <td><?=$tasca->done;?></td>
+            </tr>
         <?php endforeach; ?>
 
 
