@@ -1,6 +1,7 @@
 <?php
 
-$greeting = 'Hola kuek!';
+
+require 'vendor/autoload.php';
 
 require 'app/index.php';
 

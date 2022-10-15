@@ -1,0 +1,17 @@
+{
+    "name": "alumne/php_riba",
+    "description": "Awawa",
+    "type": "project",
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Riba00",
+            "email": "jordiriba@iesebre.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Tasca;
+
 function saludar()
 {
 
