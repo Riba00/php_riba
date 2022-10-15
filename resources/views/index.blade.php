@@ -17,7 +17,6 @@
 <body>
 <header>
     <h1><?=$greeting;?></h1>
-
     <table>
         <tr>
             <th>ID</th>
@@ -33,9 +32,6 @@
                 <td><?=$tasca->done;?></td>
             </tr>
         <?php endforeach; ?>
-
-
-
     </table>
 
 
