@@ -1,7 +1,5 @@
 <?php
 
-use App\Models\Tasca;
-
 function saludar()
 {
 
@@ -17,3 +15,5 @@ function dd($xivato)
     var_dump($xivato);
     die();
 }
+
+

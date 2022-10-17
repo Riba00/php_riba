@@ -6,6 +6,8 @@ require 'config.php';
 
 require 'app/helpers.php';
 
+//dd($app);
+
 //DRY -> Dont Repeat Yourself
 //WET -> Write Everything Twice
 

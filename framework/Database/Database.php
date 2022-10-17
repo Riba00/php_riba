@@ -23,7 +23,13 @@ class Database
 
         $statement->execute();
 
-        return $statement->fetchAll(PDO::FETCH_CLASS,Tasca::class);
+        return $statement->fetchAll(PDO::FETCH_CLASS, Tasca::class);
+
+    }
+
+    function insert()
+    {
+
 
     }
 }
