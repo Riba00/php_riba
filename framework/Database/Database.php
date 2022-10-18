@@ -2,28 +2,27 @@
 
 namespace framework\Database;
 
-use App\Models\Tasca;
 use  PDO;
 
 class Database
 {
-    public $config;
+    protected $pdo;
 
-    public function __construct($config)
+
+    public function __construct($pdo)
     {
-        $this->config = $config;
-        $this->connection = new Connection($config);
+        $this->pdo = $pdo;
     }
 
 
-    function selectAll($table)
+    public function selectAll($table)
     {
-        $dbh = $this->connection->connectDB();
-        $statement = $dbh->prepare("SELECT * FROM $table;");
+
+        $statement = $this->pdo->prepare("SELECT * FROM $table;");
 
         $statement->execute();
 
-        return $statement->fetchAll(PDO::FETCH_CLASS, Tasca::class);
+        return $statement->fetchAll(PDO::FETCH_CLASS);
 
     }
 

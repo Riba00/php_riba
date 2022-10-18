@@ -1,19 +1,18 @@
 <?php
 
-use Framework\Database\Database;
+use Framework\App;
 
-require 'config.php';
 
 require 'app/helpers.php';
 
-//dd($app);
 
 //DRY -> Dont Repeat Yourself
 //WET -> Write Everything Twice
 
+$tasques = App::get('database')->selectAll('tasques');
 
-$database = new Database($config);
-$tasques = $database->selectAll('tasques');
+
+//$database = new Database(App::get('config')['database']);
 
 
 $greeting = saludar();
