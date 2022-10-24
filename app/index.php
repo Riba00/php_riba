@@ -3,7 +3,6 @@
 use Framework\App;
 
 
-require 'app/helpers.php';
 
 
 //DRY -> Dont Repeat Yourself
