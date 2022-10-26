@@ -15,3 +15,5 @@ $tasques = App::get('database')->selectAll('tasques');
 
 
 $greeting = saludar();
+
+require 'resources/views/index.blade.php';

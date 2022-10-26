@@ -25,31 +25,8 @@
     </ul>
 </nav>
 <header>
-
-    <h1><?=$greeting;?></h1>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Completed</th>
-        </tr>
-        <?php foreach ($tasques as $tasca):?>
-            <tr>
-                <td><?=$tasca->id;?></td>
-                <td><?=$tasca->title;?></td>
-                <td><?=$tasca->description;?></td>
-                <td><?=$tasca->done;?></td>
-            </tr>
-        <?php endforeach; ?>
-    </table>
-
-
+    TO DO ABOUT HERE
 </header>
-<!--Separar les coses en seccions -> components-->
-<!--MVC -> Model Vista Controlador -> FC-->
-
-
 
 </body>
 </html>
