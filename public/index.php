@@ -2,11 +2,11 @@
 
 use Framework\App;
 
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
-require 'framework/bootstrap.php';
+require '../framework/bootstrap.php';
 
-$routes = require 'routes.php';
+$routes = require '../routes.php';
 
 
 

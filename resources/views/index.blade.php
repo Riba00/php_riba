@@ -1,55 +1,58 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        header {
-            background: yellowgreen;
-            padding: 2em;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-<nav>
-    <ul>
-        <li><a href="/tasques">Tasques</a></li>
-        <li><a href="/users">Users</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/index">Home</a></li>
-    </ul>
-</nav>
-<header>
-
-    <h1><?=$greeting;?></h1>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Completed</th>
-        </tr>
-        <?php foreach ($tasques as $tasca):?>
-            <tr>
-                <td><?=$tasca->id;?></td>
-                <td><?=$tasca->title;?></td>
-                <td><?=$tasca->description;?></td>
-                <td><?=$tasca->done;?></td>
-            </tr>
-        <?php endforeach; ?>
-    </table>
+<?php require '../resources/views/layout/html_header.blade.php' ?>
 
 
-</header>
-<!--Separar les coses en seccions -> components-->
-<!--MVC -> Model Vista Controlador -> FC-->
+<?php require '../resources/views/layout/nav.blade.php' ?>
 
+<div class="min-h-full">
+    <header class="bg-white shadow">
+        <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold tracking-tight text-gray-900">TASQUES</h1>
+        </div>
+    </header>
+    <main>
+        <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
 
+            <h1 class="mt-5 mb-5"><?= $greeting; ?></h1>
 
-</body>
-</html>
+            <div class="overflow-x-auto relative">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="py-3 px-6">
+                            Id
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Title
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Description
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Completed
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach ($tasques as $tasca): ?>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="py-4 px-6"><?= $tasca->id; ?></td>
+                        <td class="py-4 px-6">
+                                <?= $tasca->title; ?>
+                        </td>
+                        <td class="py-4 px-6">
+                                <?= $tasca->description; ?>
+                        </td>
+                        <td class="py-4 px-6">
+                                <?= $tasca->done; ?>
+                        </td>
+                    </tr>
+                    <?php endforeach; ?>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</div>
+
+<?php require '../resources/views/layout/footer.blade.php' ?>
