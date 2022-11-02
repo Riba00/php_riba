@@ -13,7 +13,4 @@ $tasques = App::get('database')->selectAll('tasques');
 
 //$database = new Database(App::get('config')['database']);
 
-
-$greeting = saludar();
-
 require '../resources/views/index.blade.php';

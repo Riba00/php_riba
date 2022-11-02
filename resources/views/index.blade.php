@@ -12,8 +12,6 @@
     <main>
         <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
 
-            <h1 class="mt-5 mb-5"><?= $greeting; ?></h1>
-
             <div class="overflow-x-auto relative">
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
