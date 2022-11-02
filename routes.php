@@ -6,6 +6,7 @@ return [
     '/index.php' => '../app/Http/Controllers/index.php',
     '/index' => '../app/Http/Controllers/index.php',
     '/contact' => '../app/Http/Controllers/contact.php',
-    '/about' => '../app/http/Controllers/about.php',
-    '/tasques' => '../app/Http/Controllers/index.php'
+    '/about' => '../app/Http/Controllers/about.php',
+    '/tasques' => '../app/Http/Controllers/index.php',
+    '/users' => '../app/Http/Controllers/users.php',
 ];
